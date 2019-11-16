@@ -94,6 +94,9 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 # Battery Saver
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power-libperfmgr/power/power-mode.cpp
 
+# Binder
+TARGET_USES_64_BIT_BINDER := true
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BOARD_HAS_QCA_BT_SOC := "cherokee"
