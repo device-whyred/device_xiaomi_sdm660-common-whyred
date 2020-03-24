@@ -136,6 +136,10 @@ on boot
     chown system system /sys/touchpanel/double_tap
     chown system system /sys/touchpanel/reversed_keys
 
+    chmod 0664 /sys/touchpanel/capacitive_keys 
+    chmod 0664 /sys/touchpanel/double_tap
+    chmod 0664 /sys/touchpanel/reversed_keys
+
  # Vibration
     chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
     chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
@@ -186,8 +190,6 @@ on boot
     # Touchboost permissions
   chown system system /sys/module/msm_performance/parameters/touchboost
   chmod 0660 /sys/module/msm_performance/parameters/touchboost
-
-
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
