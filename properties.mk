@@ -172,6 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
+    debug.sdm.support_writeback=0 \
     ro.opengles.version=196610 \
     ro.surface_flinger.wcg_composition_dataspace=143261696 \
     ro.vendor.display.cabl=0 \
