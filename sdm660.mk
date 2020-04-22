@@ -156,6 +156,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
