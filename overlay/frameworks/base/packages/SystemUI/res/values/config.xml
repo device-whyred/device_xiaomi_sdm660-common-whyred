@@ -36,4 +36,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- The number of rows in the QuickSettings -->
     <integer name="quick_settings_max_rows">4</integer>
 
+<!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
 </resources>
