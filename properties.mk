@@ -215,11 +215,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.power.collapse=0
 
 # Wifi
-wifi.interface=wlan0 \
-wifi.supplicant_scan_interval=500
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0 \
+    wifi.supplicant_scan_interval=500
 
 # Power Saver
-power.saving.mode=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    power.saving.mode=1
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
