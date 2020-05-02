@@ -40,6 +40,7 @@ allow vendor_toolbox {
     rfs_file
     rfs_shared_hlos_file
     sensors_persist_file
+    viper_se
     unlabeled
     vendor_persist_mmi_file
 }:dir { r_dir_perms setattr };
