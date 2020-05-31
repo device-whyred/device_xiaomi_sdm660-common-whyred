@@ -1,2 +1,4 @@
 allow priv_app vendor_default_prop:file { read };
 allow priv_app vendor_camera_prop:file { read open getattr };
+allow priv_app proc_interrupts:file { getattr open read };
+allow priv_app proc_modules:file { open read getattr };

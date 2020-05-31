@@ -1,4 +1,6 @@
 allow untrusted_app theme_prop:file { read };
 allow untrusted_app persist_camera_prop:file { open read getattr };
+allow untrusted_app sysfs_kgsl:dir { search };
+allow untrusted_app sysfs_kgsl:lnk_file { read open getattr };
 get_prop(untrusted_app, persist_camera_prop)  
 get_prop(untrusted_app, camera_prop)  
