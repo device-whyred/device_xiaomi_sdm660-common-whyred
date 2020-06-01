@@ -137,10 +137,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
-# Codec2 switch
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2
-
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
