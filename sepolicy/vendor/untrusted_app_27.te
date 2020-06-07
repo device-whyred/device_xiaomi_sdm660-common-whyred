@@ -1,3 +1,5 @@
 allow untrusted_app_27 theme_prop:file { read open };
+allow untrusted_app_27 vendor_default_prop:file { getattr  open  read };
+allow untrusted_app_27 vendor_default_prop:file { getattr  open  read };
 get_prop(untrusted_app_27, persist_camera_prop)
 
