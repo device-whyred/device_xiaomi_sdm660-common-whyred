@@ -144,10 +144,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
+    debug.sf.recomputecrop=0 \
     debug.sf.hw=1 \
     debug.sf.disable_backpressure= 1 \
-    debug.sf.early_phase_offset_ns=500000 \
-    debug.sf.early_app_phase_offset_ns=500000 \
+    debug.sf.early_phase_offset_ns=11600000 \
+    debug.sf.early_app_phase_offset_ns=11600000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
     debug.cpurend.vsync=false \
@@ -168,7 +169,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.high_fps_early_phase_offset_ns=6100000 \
     debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
-    debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
+    debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 
 # Fling
 PRODUCT_PROPERTY_OVERRIDES += \
