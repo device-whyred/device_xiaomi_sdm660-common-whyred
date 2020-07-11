@@ -174,6 +174,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable_bframes=1
 
+# Disable vsync for cpu rendered apps
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.cpurend.vsync=false
+
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q660-13149-1
