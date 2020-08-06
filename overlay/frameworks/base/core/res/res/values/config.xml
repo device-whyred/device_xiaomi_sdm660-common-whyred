@@ -409,6 +409,15 @@
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
+
+    <!-- Sets the paths that are needed for SystemInfo-->
+    <string name="config_cpu_temp_path" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_battery_temp_path" translatable="false">sys/class/power_supply/battery/temp</string>
+    <string name="config_gpu_clock_path" translatable="false">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_gpu_busy_path" translatable="false">/sys/kernel/gpu/gpu_busy</string>
+    <string name="config_battery_level_path" translatable="false">/sys/class/power_supply/battery/capacity</string>
+
+    <!-- Flag indicating whether the surface flinger has limited alpha compositing functionality in hardware. If set, the window manager will disable alpha trasformation in animations where not strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
 <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
