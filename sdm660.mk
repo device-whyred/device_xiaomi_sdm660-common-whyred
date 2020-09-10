@@ -437,9 +437,15 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+
 # Shims
 PRODUCT_PACKAGES += \
     libdpmframework_shim
+
+# Signapk
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
