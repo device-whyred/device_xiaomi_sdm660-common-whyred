@@ -32,12 +32,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USE_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) 
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-     hardware/qcom-caf/msm8998/display \
-     hardware/qcom-caf/msm8998/media \
-     hardware/qcom-caf/msm8998/audio
+    $(LOCAL_PATH) 
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
@@ -375,7 +376,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
+     android.hardware.power-service-qti
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
