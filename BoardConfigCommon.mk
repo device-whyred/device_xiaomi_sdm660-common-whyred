@@ -187,7 +187,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_USES_NON_LEGACY_POWERHAL := true
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-temp
+
 
 
 # Properties
@@ -201,10 +201,11 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
