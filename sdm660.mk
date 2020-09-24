@@ -34,7 +34,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+     hardware/qcom-caf/msm8998/display \
+     hardware/qcom-caf/msm8998/media \
+     hardware/qcom-caf/msm8998/audio
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
@@ -220,8 +223,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.1_vendor
 
 # Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+    #XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -424,8 +427,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+    #telephony-ext
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v29.so \
@@ -448,7 +451,10 @@ PRODUCT_PACKAGES += \
 
 # Signapk
 PRODUCT_HOST_PACKAGES += \
-    signapk
+    signapk \
+    avbtool \
+    brotli \
+    aapt2
 
 
 # Tetheroffload

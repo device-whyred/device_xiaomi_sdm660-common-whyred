@@ -12,7 +12,7 @@ allow vendor_toolbox vendor_toolbox_exec:file execute_no_trans;
 allow vendor_toolbox rootfs:dir r_dir_perms;
 
 allow vendor_toolbox mnt_vendor_file:file { getattr };
-allow vendor_toolbox persist_audio_file:dir { getattr  open  read  setattr };
+#allow vendor_toolbox persist_audio_file:dir { getattr  open  read  setattr };
 allow vendor_toolbox persist_rfs_file:file { getattr };
 allow vendor_toolbox persist_time_file:file { getattr };
 allow vendor_toolbox sensors_persist_file:file { getattr };
