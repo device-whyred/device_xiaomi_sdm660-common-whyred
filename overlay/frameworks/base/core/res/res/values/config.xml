@@ -307,9 +307,6 @@
     <!--  Define optional package verifier name -->
     <!-- <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string> -->
 
-    <!-- Whether camera shutter sound is forced or not  (country specific). -->
-    <bool name="config_camera_sound_forced">false</bool>
-
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
