@@ -1,3 +1,0 @@
-vendor.fastrpc.process.attrs   u:object_r:vendor_adsprpc_prop:s0 exact int
-vendor.fastrpc.debug.trace     u:object_r:vendor_adsprpc_prop:s0 exact int
-vendor.camera.aux.packageblacklist u:object_r:vendor_camera_prop:s0
