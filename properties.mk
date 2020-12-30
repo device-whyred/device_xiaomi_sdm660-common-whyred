@@ -239,11 +239,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sensors.mot_detect=true
 
-#Memory optimization
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true \
-    ro.vendor.qti.am.reschedule_service=true
-
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
