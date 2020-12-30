@@ -209,19 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     ro.telephony.default_network=22,22 \
-    ro.vendor.use_data_netmgrd=true \
-    persist.vendor.data.mode=concurrent \
-    ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0
-
-# Wifi
-PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=500
-
-# Power Saver
-PRODUCT_PROPERTY_OVERRIDES += \
-    power.saving.mode=1
+    ro.vendor.use_data_netmgrd=true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
