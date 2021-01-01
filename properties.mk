@@ -297,4 +297,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1 \
     pm.dexopt.bg-dexopt=speed-profile \
     pm.dexopt.shared=speed
->>>>>>> e0fb0c79... Lavender: prop: Add ZenTouch v12:vendor_prop.mk
