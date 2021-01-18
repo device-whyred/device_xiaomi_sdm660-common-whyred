@@ -491,9 +491,5 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     Via
 
-# VancedManager By Vanced Team
-PRODUCT_PACKAGES += \
-     VancedManager
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
