@@ -153,7 +153,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
-# LMKD
+# LMKD stats logging
 TARGET_LMKD_STATS_LOG := true
 
 # Partitions
