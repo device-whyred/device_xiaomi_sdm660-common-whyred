@@ -298,6 +298,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.bg-dexopt=speed-profile \
     pm.dexopt.shared=speed
 
-# Fast App Launch
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
