@@ -141,6 +141,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
