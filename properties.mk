@@ -12,7 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-threads=8
 
-# Audio
+#Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
@@ -279,3 +279,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     profiler.force_disable_err_rpt=true \
     profiler.force_disable_err_rpt=1 \
     profiler.force_disable_ulog=1
+
+#Open the first-in-first-out interface thread
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1 \
+    pm.dexopt.bg-dexopt=speed-profile \
+    pm.dexopt.shared=speed
+
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.iorapd.enable=true \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
