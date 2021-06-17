@@ -42,6 +42,12 @@ PRODUCT_SOONG_NAMESPACES += \
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
+# Dexpreopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
