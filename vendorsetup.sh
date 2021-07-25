@@ -1,6 +1,6 @@
-rm -rf hardware/qcom-caf/msm8998/display
-rm -rf hardware/qcom-caf/msm8998/media
-rm -rf hardware/qcom-caf/msm8998/audio
+#rm -rf hardware/qcom-caf/msm8998/display
+#rm -rf hardware/qcom-caf/msm8998/media
+#rm -rf hardware/qcom-caf/msm8998/audio
 
 # git clone
 #git clone https://github.com/predator112/android_kernel_xiaomi_sdm660_southwest -b 11.0-eas-wifi-r kernel/xiaomi/sdm660
