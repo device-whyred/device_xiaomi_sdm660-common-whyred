@@ -445,6 +445,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.xiaomi_sdm660.qti
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
