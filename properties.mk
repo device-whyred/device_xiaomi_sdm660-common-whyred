@@ -318,3 +318,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.low_ram=false \
     ro.lmk.log_stats=true \
     ro.lmk.use_psi=false
+
+# Perf
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.qti.sys.fw.bg_apps_limit=60 \
+    vendor.perf.gestureflingboost.enable=true
