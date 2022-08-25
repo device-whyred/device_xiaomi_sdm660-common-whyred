@@ -215,6 +215,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.vendor.data.mode=concurrent \
+    persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
@@ -263,3 +264,18 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Power saving
+PRODUCT_PROPERTY_OVERRIDES += \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
+
+# Battery Efficiency
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.disable.power.collapse=0 \
+    ro.ril.power_collapse=1 \
+    power_supply.wakeup=enable \
+    profiler.force_disable_ulog=true \
+    profiler.force_disable_err_rpt=true \
+    profiler.force_disable_err_rpt=1 \
+    profiler.force_disable_ulog=1
