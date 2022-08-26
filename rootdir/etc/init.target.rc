@@ -247,11 +247,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #    oneshot
 #
 
-service adsprpcd_root /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
-
 service adsprpcd /vendor/bin/adsprpcd audiopd
    class main
    user media
@@ -267,12 +262,6 @@ service audiod /system/vendor/bin/audiod
    class late_start
    user system
    group system
-
-service vendor.cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
-   disabled
 
 #
 #service usf_tester /system/vendor/bin/usf_tester
