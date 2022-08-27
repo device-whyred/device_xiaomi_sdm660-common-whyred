@@ -2,10 +2,6 @@
 allow init sysfs_type:file { setattr };
 allow init iorapd_data_file:file getattr;
 allow init sysfs_graphics:file { open write };
-# USB Fastcharge
-allow init sysfs_usbcharge:file { write open };
-# Fastcharge
-allow init sysfs_fcharge:file { write open };
 
 allow init hal_perf_default:binder { call };
 allow init vendor_file:file { execute };
