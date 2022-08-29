@@ -291,3 +291,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.iorapd.enable=true \
     iorapd.perfetto.enable=true \
     iorapd.readahead.enable=true
+
+# ims log kill
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1
