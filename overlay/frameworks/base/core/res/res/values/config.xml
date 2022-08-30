@@ -451,6 +451,4 @@
          screenshot chord -->
    <integer name="config_screenshotChordKeyTimeout">0</integer>
 
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_enableSmartPixels">true</bool>
 </resources>
