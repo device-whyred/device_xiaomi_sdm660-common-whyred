@@ -303,3 +303,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableDebugLogs=1 \
     persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1
+
+# iocgrub
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.iocgrp.config=1
