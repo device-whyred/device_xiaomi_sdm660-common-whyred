@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -25,6 +26,9 @@
 COMMON_PATH := device/xiaomi/sdm660-common
 
 BOARD_VENDOR := xiaomi
+
+# Bypass ABI Checks
+SKIP_ABI_CHECKS := true
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -150,7 +154,6 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifests/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sdm660
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
-<<<<<<< HEAD
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 USE_DEVICE_SPECIFIC_IPACFG_MGR := true
@@ -159,9 +162,6 @@ USE_DEVICE_SPECIFIC_IPACFG_MGR := true
 TARGET_PROVIDES_KEYMASTER := true
 
 # LMKD
-=======
-# LMKD stats logging
->>>>>>> 309e9d543 (sdm660-common: Use Userspace LMKD if there's no LMK driver)
 TARGET_LMKD_STATS_LOG := true
 
 # Partitions
