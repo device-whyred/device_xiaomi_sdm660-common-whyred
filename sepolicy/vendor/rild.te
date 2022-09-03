@@ -1,2 +1,2 @@
-allow rild qtidataservices_app:binder { call };xy
+allow rild qtidataservices_app:binder { call };
 
