@@ -26,6 +26,9 @@ COMMON_PATH := device/xiaomi/sdm660-common
 
 BOARD_VENDOR := xiaomi
 
+# Bypass ABI Checks
+export SKIP_ABI_CHECKS := true
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Bootloader
