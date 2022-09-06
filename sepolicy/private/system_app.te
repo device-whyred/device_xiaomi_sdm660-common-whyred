@@ -2,3 +2,7 @@ hal_client_domain(system_app, hal_mlipay)
 get_prop(system_app, persist_camera_prop);
 allow system_app vendor_default_prop:file { getattr open read };
 allow system_app vendor_default_prop:file {map};
+
+# torch
+allow system_app sysfs_tbrightness:file { open getattr write };
+allow system_app sysfs_leds:dir search;
