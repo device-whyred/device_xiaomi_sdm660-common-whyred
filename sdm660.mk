@@ -38,7 +38,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/qcom-caf/msm8998
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
