@@ -4,3 +4,6 @@ allow untrusted_app sysfs_kgsl:dir { search };
 allow untrusted_app sysfs_kgsl:lnk_file { read open getattr };
 get_prop(untrusted_app, persist_camera_prop)  
 get_prop(untrusted_app, camera_prop)  
+
+dontaudit untrusted_app sysfs_kgsl:lnk_file read;
+dontaudit untrusted_app proc_vmstat:file { getattr open };
