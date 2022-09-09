@@ -8,9 +8,9 @@ get_prop(untrusted_app, camera_prop)
 allow untrusted_app vendor_default_prop:file { getattr };
 allow untrusted_app app_data_file:file { execute };
 allow untrusted_app vendor_default_prop:file { read open };
-allow untrusted_app proc_qtaguid_stat:file { read }; 
-allow untrusted_app proc_zoneinfo:file { read };
-allow untrusted_app rootfs:dir { read };
+dontaudit untrusted_app proc_qtaguid_stat:file { read }; 
+dontaudit untrusted_app proc_zoneinfo:file { read };
+dontaudit untrusted_app rootfs:dir { read };
 
 dontaudit untrusted_app sysfs_kgsl:lnk_file read;
 dontaudit untrusted_app proc_vmstat:file { getattr open };
