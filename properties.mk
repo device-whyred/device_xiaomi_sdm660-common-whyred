@@ -323,4 +323,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Perf
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.qti.sys.fw.bg_apps_limit=60 \
-    vendor.perf.gestureflingboost.enable=true
+    vendor.perf.gestureflingboost.enable=true \
+    ro.vendor.perf.scroll_opt=true
