@@ -134,7 +134,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
     PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
+    camera.shutter_sound.blacklist=com.android.camera
 
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -144,12 +145,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.hw=1 \
+    debug.sf.hw=0 \
     debug.sf.disable_backpressure= 1 \
-    debug.sf.early_phase_offset_ns=500000 \
-    debug.sf.early_app_phase_offset_ns=500000 \
-    debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     persist.debug.wfd.enable=1 \
@@ -318,3 +315,22 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.qti.sys.fw.bg_apps_limit=60 \
     vendor.perf.gestureflingboost.enable=true \
     ro.vendor.perf.scroll_opt=true
+
+# Increase Ram Managment
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.fha_enable=true \
+    ro.sys.fw.bg_apps_limit=32 \
+    ro.config.dha_cached_max=16 \
+    ro.config.dha_empty_max=42 \
+    ro.config.dha_empty_init=32 \
+    ro.config.dha_lmk_scale=0.545 \
+    ro.config.dha_th_rate=2.3 \
+    ro.config.sdha_apps_bg_max=64 \
+    ro.config.sdha_apps_bg_min=8
+
+# Zram-writeback
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24 \
+    debug.sdm.support_writeback=0
