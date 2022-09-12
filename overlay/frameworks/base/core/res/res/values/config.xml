@@ -468,4 +468,8 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
+
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
 </resources>
